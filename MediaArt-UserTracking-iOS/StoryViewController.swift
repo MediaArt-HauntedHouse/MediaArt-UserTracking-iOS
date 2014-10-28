@@ -13,18 +13,19 @@ class StoryViewController: UIViewController {
 
     typealias storiesType = Dictionary<String, String>
     
+    var storyIndex: Int = 0
     let stories: [storiesType] = [
         [
             "story": "zero"
         ],
         [
-            "story": ""
+            "story": "one"
         ]
     ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.storyTextView.text = stories[0]["story"]
+        self.storyTextView.text = stories[storyIndex]["story"]
     }
 
     override func didReceiveMemoryWarning() {

@@ -22,7 +22,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="yRb-s0-nAc" kind="push" id="Jwj-rR-6c3"/>
+                                    <segue destination="yRb-s0-nAc" kind="custom" identifier="storySegue" id="Jwj-rR-6c3"/>
                                 </connections>
                             </button>
                         </subviews>
