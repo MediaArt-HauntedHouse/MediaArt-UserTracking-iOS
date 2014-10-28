@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>320E1EBE-4AAC-4428-B46B-F394543EFED4</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MediaArt-UserTracking-iOS</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>DD53D123EBC799A230BCF30FABA29113F856594F</key>
+		<string>https://github.com/MediaArt-HauntedHouse/MediaArt-UserTracking-iOS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MediaArt-UserTracking-iOS.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>DD53D123EBC799A230BCF30FABA29113F856594F</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/MediaArt-HauntedHouse/MediaArt-UserTracking-iOS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>DD53D123EBC799A230BCF30FABA29113F856594F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>DD53D123EBC799A230BCF30FABA29113F856594F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MediaArt-UserTracking-iOS</string>
+		</dict>
+	</array>
+</dict>
+</plist>

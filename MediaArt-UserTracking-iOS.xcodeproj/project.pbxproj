@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		A0D711B319FFCDA400F70AC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D711B219FFCDA400F70AC8 /* AppDelegate.swift */; };
 		A0D711B619FFCDA400F70AC8 /* MediaArt_UserTracking_iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A0D711B419FFCDA400F70AC8 /* MediaArt_UserTracking_iOS.xcdatamodeld */; };
-		A0D711B819FFCDA400F70AC8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D711B719FFCDA400F70AC8 /* ViewController.swift */; };
 		A0D711BB19FFCDA400F70AC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0D711B919FFCDA400F70AC8 /* Main.storyboard */; };
 		A0D711BD19FFCDA400F70AC8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0D711BC19FFCDA400F70AC8 /* Images.xcassets */; };
 		A0D711C019FFCDA400F70AC8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0D711BE19FFCDA400F70AC8 /* LaunchScreen.xib */; };
 		A0D711CC19FFCDA500F70AC8 /* MediaArt_UserTracking_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D711CB19FFCDA500F70AC8 /* MediaArt_UserTracking_iOSTests.swift */; };
+		A0D711D619FFCF5600F70AC8 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D711D519FFCF5600F70AC8 /* MapViewController.swift */; };
+		A0D711D819FFCF7800F70AC8 /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D711D719FFCF7800F70AC8 /* StoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,13 +32,14 @@
 		A0D711B119FFCDA400F70AC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0D711B219FFCDA400F70AC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0D711B519FFCDA400F70AC8 /* MediaArt_UserTracking_iOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MediaArt_UserTracking_iOS.xcdatamodel; sourceTree = "<group>"; };
-		A0D711B719FFCDA400F70AC8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A0D711BA19FFCDA400F70AC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A0D711BC19FFCDA400F70AC8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A0D711BF19FFCDA400F70AC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A0D711C519FFCDA500F70AC8 /* MediaArt-UserTracking-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MediaArt-UserTracking-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0D711CA19FFCDA500F70AC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0D711CB19FFCDA500F70AC8 /* MediaArt_UserTracking_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaArt_UserTracking_iOSTests.swift; sourceTree = "<group>"; };
+		A0D711D519FFCF5600F70AC8 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		A0D711D719FFCF7800F70AC8 /* StoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,12 +82,13 @@
 			isa = PBXGroup;
 			children = (
 				A0D711B219FFCDA400F70AC8 /* AppDelegate.swift */,
-				A0D711B719FFCDA400F70AC8 /* ViewController.swift */,
 				A0D711B919FFCDA400F70AC8 /* Main.storyboard */,
 				A0D711BC19FFCDA400F70AC8 /* Images.xcassets */,
 				A0D711BE19FFCDA400F70AC8 /* LaunchScreen.xib */,
 				A0D711B419FFCDA400F70AC8 /* MediaArt_UserTracking_iOS.xcdatamodeld */,
 				A0D711B019FFCDA400F70AC8 /* Supporting Files */,
+				A0D711D519FFCF5600F70AC8 /* MapViewController.swift */,
+				A0D711D719FFCF7800F70AC8 /* StoryViewController.swift */,
 			);
 			path = "MediaArt-UserTracking-iOS";
 			sourceTree = "<group>";
@@ -215,9 +218,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0D711B819FFCDA400F70AC8 /* ViewController.swift in Sources */,
+				A0D711D819FFCF7800F70AC8 /* StoryViewController.swift in Sources */,
 				A0D711B619FFCDA400F70AC8 /* MediaArt_UserTracking_iOS.xcdatamodeld in Sources */,
 				A0D711B319FFCDA400F70AC8 /* AppDelegate.swift in Sources */,
+				A0D711D619FFCF5600F70AC8 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +347,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "MediaArt-UserTracking-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -353,6 +358,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "MediaArt-UserTracking-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -411,6 +417,7 @@
 				A0D711D119FFCDA500F70AC8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A0D711D219FFCDA500F70AC8 /* Build configuration list for PBXNativeTarget "MediaArt-UserTracking-iOSTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +426,7 @@
 				A0D711D419FFCDA500F70AC8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
