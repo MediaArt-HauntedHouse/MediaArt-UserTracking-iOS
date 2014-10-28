@@ -16,10 +16,22 @@ class StoryViewController: UIViewController {
     var storyIndex: Int = 0
     let stories: [storiesType] = [
         [
-            "story": "zero"
+            "story": "0"
         ],
         [
-            "story": "one"
+            "story": "1"
+        ],
+        [
+            "story": "2"
+        ],
+        [
+            "story": "3"
+        ],
+        [
+            "story": "4"
+        ],
+        [
+            "story": "5"
         ]
     ]
 
