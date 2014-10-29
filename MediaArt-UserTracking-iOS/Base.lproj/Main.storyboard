@@ -22,9 +22,21 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="distance" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jIO-lf-6PO">
+                                <rect key="frame" x="16" y="109" width="66" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="majorID" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rcG-Oe-OgI">
+                                <rect key="frame" x="16" y="144" width="60" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cAP-6m-WZv">
-                                <rect key="frame" x="16" y="109" width="46" height="30"/>
-                                <state key="normal" title="Story">
+                                <rect key="frame" x="16" y="173" width="113" height="30"/>
+                                <state key="normal" title="Show now Story">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -36,6 +48,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="lcg-c2-Bfl"/>
                     <connections>
+                        <outlet property="distance" destination="jIO-lf-6PO" id="Cka-vI-QzZ"/>
+                        <outlet property="majorID" destination="rcG-Oe-OgI" id="o8c-zJ-EYG"/>
                         <outlet property="region" destination="vMe-C5-3Qf" id="kiY-uw-7Fp"/>
                     </connections>
                 </viewController>

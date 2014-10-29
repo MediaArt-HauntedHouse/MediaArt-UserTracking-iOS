@@ -13,7 +13,11 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     var locationManager:CLLocationManager!
     var beaconRegion:CLBeaconRegion!
     
+    var storyID = 0
+    
     @IBOutlet weak var region: UILabel!
+    @IBOutlet weak var distance: UILabel!
+    @IBOutlet weak var majorID: UILabel!
 
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -31,7 +35,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
             self.locationManager.requestAlwaysAuthorization()
         }
         
-        let uuid:NSUUID? = NSUUID(UUIDString: "CB86BC31-05BD-40CC-903D-1C9BD13D966B")
+        let uuid:NSUUID? = NSUUID(UUIDString: "FF2BB40C-6C0E-1801-A386-001C4DB9EE23")
         let identifierStr:NSString = ""
 
         beaconRegion = CLBeaconRegion(proximityUUID:uuid, identifier:identifierStr)
@@ -47,7 +51,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         if (segue.identifier == "storySegue") {
             let storyViewController: StoryViewController = segue.destinationViewController as StoryViewController
-            storyViewController.storyIndex = 1
+            storyViewController.storyIndex = storyID
         }
     }
     
@@ -96,7 +100,20 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         if(beacons.count > 0){
             for var i = 0; i < beacons.count; i++ {
                 var beacon = beacons[i] as CLBeacon
-                print(beacon)
+
+                if (beacon.proximity == CLProximity.Unknown) {
+                    self.distance.text = "Unknown Proximity"
+                    return
+                } else if (beacon.proximity == CLProximity.Immediate) {
+                    self.distance.text = "Immediate"
+                } else if (beacon.proximity == CLProximity.Near) {
+                    self.distance.text = "Near"
+                } else if (beacon.proximity == CLProximity.Far) {
+                    self.distance.text = "Far"
+                }
+                self.majorID.text = "\(beacon.major)"
+                storyID = Int(beacon.major)
+                
             }
         }else{
             print("beacon not found")
