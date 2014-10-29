@@ -45,7 +45,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         let status = CLLocationManager.authorizationStatus()
         
         if(status == CLAuthorizationStatus.NotDetermined) {
-            self.locationManager.requestAlwaysAuthorization();
+            self.locationManager.requestAlwaysAuthorization()
         }
     }
     
