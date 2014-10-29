@@ -9,7 +9,7 @@
 import UIKit
 
 class StoryViewController: UIViewController {
-    @IBOutlet weak var storyTextView: UITextView!
+    @IBOutlet weak var storyTextView: UILabel!
 
     typealias storiesType = Dictionary<String, String>
     
